@@ -463,51 +463,39 @@
       <div class="carousel-track-wrap reveal">
         <div class="carousel-track" id="track">
           <div class="carousel-slide">
-            <img src="images/IMG_3394.jpeg" alt="The Fogcutter exterior">
+            <img src="images/IMG_7984.jpeg" alt="The Fogcutter exterior" style="object-position: center 40%;">
             <span class="slide-caption">The Fogcutter</span>
           </div>
           <div class="carousel-slide">
-            <img src="images/IMG_7044.jpeg" alt="Living room with coffered ceiling">
+            <img src="images/IMG_7044.jpeg" alt="Living room with coffered ceiling" style="object-position: center 30%;">
             <span class="slide-caption">Living Room</span>
           </div>
           <div class="carousel-slide">
-            <img src="images/IMG_6291.jpeg" alt="Sunroom with rocking chairs">
+            <img src="images/IMG_6291.jpeg" alt="Sunroom with rocking chairs" style="object-position: center 60%;">
             <span class="slide-caption">Sunroom</span>
           </div>
           <div class="carousel-slide">
-            <img src="images/IMG_7043.jpeg" alt="Kitchen">
+            <img src="images/IMG_7043.jpeg" alt="Kitchen" style="object-position: center center;">
             <span class="slide-caption">Kitchen</span>
           </div>
           <div class="carousel-slide">
-            <img src="images/IMG_7035.jpeg" alt="Master bedroom with skylight">
+            <img src="images/IMG_7035.jpeg" alt="Master bedroom with skylight" style="object-position: center 40%;">
             <span class="slide-caption">Master Bedroom</span>
           </div>
           <div class="carousel-slide">
-            <img src="images/IMG_7054.jpeg" alt="Bedroom with skylight">
+            <img src="images/IMG_7054.jpeg" alt="Bedroom with skylight" style="object-position: center 40%;">
             <span class="slide-caption">Bedroom</span>
           </div>
           <div class="carousel-slide">
-            <img src="images/IMG_7052.jpeg" alt="Bedroom">
-            <span class="slide-caption">Bedroom</span>
-          </div>
-          <div class="carousel-slide">
-            <img src="images/IMG_7040.jpeg" alt="Bathroom">
-            <span class="slide-caption">Bathroom</span>
-          </div>
-          <div class="carousel-slide">
-            <img src="images/IMG_7049.jpeg" alt="Bathroom with tub">
-            <span class="slide-caption">Bathroom</span>
-          </div>
-          <div class="carousel-slide">
-            <img src="images/IMG_5112.jpeg" alt="Higgins Beach">
+            <img src="images/IMG_5112.jpeg" alt="Higgins Beach" style="object-position: center 40%;">
             <span class="slide-caption">Higgins Beach</span>
           </div>
           <div class="carousel-slide">
-            <img src="images/IMG_2809.jpeg" alt="Maine coastline">
+            <img src="images/IMG_2809.jpeg" alt="Maine coastline" style="object-position: center 50%;">
             <span class="slide-caption">Steps Away</span>
           </div>
           <div class="carousel-slide">
-            <img src="images/IMG_8562.jpeg" alt="The Fogcutter at night">
+            <img src="images/IMG_8562.jpeg" alt="The Fogcutter at night" style="object-position: center 50%;">
             <span class="slide-caption">Summer Evenings</span>
           </div>
         </div>
@@ -627,10 +615,10 @@
     document.getElementById('next').addEventListener('click', () => goTo(current + 1));
 
     // auto-advance
-    let autoplay = setInterval(() => goTo(current + 1), 4500);
+    let autoplay = setInterval(() => goTo(current + 1), 3000);
     track.parentElement.addEventListener('mouseenter', () => clearInterval(autoplay));
     track.parentElement.addEventListener('mouseleave', () => {
-      autoplay = setInterval(() => goTo(current + 1), 4500);
+      autoplay = setInterval(() => goTo(current + 1), 3000);
     });
 
     // touch swipe
