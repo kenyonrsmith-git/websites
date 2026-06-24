@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Fogcutter — Higgins Beach, Maine</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Georgia, serif;
+      color: #2c3e50;
+      background: #f4f9fc;
+    }
+
+    /* NAV */
+    nav {
+      background: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #dce8f0;
+    }
+    nav .logo {
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+      color: #2a7fac;
+      font-weight: bold;
+    }
+    nav a {
+      text-decoration: none;
+      color: #2a7fac;
+      margin-left: 30px;
+      font-family: Arial, sans-serif;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+    }
+
+    /* HERO */
+    .hero {
+      background: #cce8f5;
+      height: 520px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+    .hero .placeholder-img {
+      position: absolute;
+      inset: 0;
+      background: #a8d4e8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #5a9ab5;
+      font-family: Arial, sans-serif;
+      font-size: 1rem;
+      letter-spacing: 1px;
+    }
+    .hero-text {
+      position: relative;
+      z-index: 1;
+      background: rgba(255,255,255,0.8);
+      padding: 40px 60px;
+      border-radius: 4px;
+    }
+    .hero-text h1 {
+      font-size: 3rem;
+      color: #1a5f7a;
+      letter-spacing: 4px;
+    }
+    .hero-text p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+      color: #3a7d99;
+      letter-spacing: 2px;
+      font-family: Arial, sans-serif;
+    }
+    .hero-text a {
+      display: inline-block;
+      margin-top: 24px;
+      padding: 12px 32px;
+      background: #2a7fac;
+      color: #fff;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 0.9rem;
+      letter-spacing: 2px;
+      border-radius: 2px;
+    }
+
+    /* SECTION WRAPPER */
+    section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 70px 30px;
+    }
+    section h2 {
+      font-size: 1.8rem;
+      color: #1a5f7a;
+      letter-spacing: 3px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    /* PHOTO GRID */
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .photo-grid .photo {
+      background: #a8d4e8;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #5a9ab5;
+      font-family: Arial, sans-serif;
+      font-size: 0.85rem;
+      letter-spacing: 1px;
+      border-radius: 2px;
+    }
+    .photo-grid .photo.large {
+      grid-column: span 2;
+      height: 260px;
+    }
+
+    /* DETAILS */
+    .details-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      margin-top: 10px;
+    }
+    .detail-card {
+      background: #fff;
+      border: 1px solid #dce8f0;
+      padding: 30px;
+      border-radius: 4px;
+      text-align: center;
+    }
+    .detail-card .icon {
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+    .detail-card h3 {
+      font-size: 1rem;
+      color: #1a5f7a;
+      letter-spacing: 2px;
+      font-family: Arial, sans-serif;
+      margin-bottom: 8px;
+    }
+    .detail-card p {
+      font-size: 0.95rem;
+      color: #5a7a8a;
+      line-height: 1.6;
+    }
+
+    /* DIVIDER */
+    hr {
+      border: none;
+      border-top: 1px solid #dce8f0;
+    }
+
+    /* CONTACT */
+    .contact-section {
+      background: #1a5f7a;
+      color: #fff;
+      text-align: center;
+      padding: 70px 30px;
+    }
+    .contact-section h2 {
+      font-size: 1.8rem;
+      letter-spacing: 3px;
+      margin-bottom: 16px;
+    }
+    .contact-section p {
+      font-family: Arial, sans-serif;
+      font-size: 1rem;
+      color: #cce8f5;
+      margin-bottom: 24px;
+    }
+    .contact-section .phone {
+      font-size: 2rem;
+      letter-spacing: 3px;
+      color: #fff;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #0f3d50;
+      color: #7aafc2;
+      text-align: center;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="logo">THE FOGCUTTER</div>
+    <div>
+      <a href="#photos">PHOTOS</a>
+      <a href="#details">THE HOUSE</a>
+      <a href="#contact">CONTACT</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="placeholder-img">[ HERO PHOTO — FRONT OF HOUSE OR BEACH VIEW ]</div>
+    <div class="hero-text">
+      <h1>THE FOGCUTTER</h1>
+      <p>HIGGINS BEACH, MAINE</p>
+      <a href="#contact">INQUIRE ABOUT AVAILABILITY</a>
+    </div>
+  </div>
+
+  <!-- PHOTOS -->
+  <section id="photos">
+    <h2>THE HOUSE</h2>
+    <div class="photo-grid">
+      <div class="photo large">[ PHOTO — LIVING AREA ]</div>
+      <div class="photo">[ PHOTO — KITCHEN ]</div>
+      <div class="photo">[ PHOTO — BEDROOM ]</div>
+      <div class="photo">[ PHOTO — OUTDOOR SHOWER ]</div>
+      <div class="photo large">[ PHOTO — DECK / BACKYARD ]</div>
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- DETAILS -->
+  <section id="details">
+    <h2>WHAT TO EXPECT</h2>
+    <div class="details-grid">
+      <div class="detail-card">
+        <div class="icon">🛏</div>
+        <h3>SLEEPING</h3>
+        <p>4 bedrooms — comfortably sleeps up to 8 guests</p>
+      </div>
+      <div class="detail-card">
+        <div class="icon">🚿</div>
+        <h3>BATHROOMS</h3>
+        <p>2 full bathrooms plus a private outdoor shower — perfect after a beach day</p>
+      </div>
+      <div class="detail-card">
+        <div class="icon">🌊</div>
+        <h3>BEACH ACCESS</h3>
+        <p>A short walk to Higgins Beach — one of Maine's most beautiful stretches of sand</p>
+      </div>
+      <div class="detail-card">
+        <div class="icon">📍</div>
+        <h3>LOCATION</h3>
+        <p>Higgins Beach, Scarborough, Maine — quiet, charming, and close to everything</p>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- CONTACT -->
+  <div class="contact-section" id="contact">
+    <h2>BOOK YOUR STAY</h2>
+    <p>Reach out to check availability and rates</p>
+    <div class="phone">(000) 000-0000</div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    &copy; 2026 The Fogcutter — Higgins Beach, Maine
+  </footer>
+
+</body>
+</html>
