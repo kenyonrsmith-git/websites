@@ -84,20 +84,12 @@
       position: absolute;
       inset: 0;
       background: linear-gradient(160deg, var(--blue-200) 0%, var(--blue-400) 50%, var(--blue-600) 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--blue-600);
-      font-size: 0.85rem;
-      letter-spacing: 2px;
     }
-    .hero-placeholder-label {
-      background: rgba(255,255,255,0.25);
-      padding: 12px 24px;
-      border-radius: 4px;
-      color: rgba(255,255,255,0.7);
-      font-size: 0.8rem;
-      letter-spacing: 2px;
+    .hero-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
     }
     .hero-overlay {
       position: absolute;
@@ -232,21 +224,17 @@
       min-width: 100%;
       height: 520px;
       background: var(--blue-200);
-      display: flex;
-      align-items: center;
-      justify-content: center;
       flex-shrink: 0;
       position: relative;
+      overflow: hidden;
     }
-    .slide-label {
-      background: rgba(255,255,255,0.4);
-      backdrop-filter: blur(8px);
-      padding: 12px 28px;
-      border-radius: 2px;
-      font-size: 0.75rem;
-      letter-spacing: 2px;
-      color: var(--blue-800);
-      text-transform: uppercase;
+    .carousel-slide img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
     }
     .slide-caption {
       position: absolute;
@@ -443,7 +431,7 @@
   <!-- HERO -->
   <section class="hero" id="home">
     <div class="hero-bg">
-      <span class="hero-placeholder-label">HERO PHOTO — BEACH OR FRONT OF HOUSE</span>
+      <img src="images/IMG_4729.jpeg" alt="Higgins Beach sunset, Maine">
     </div>
     <div class="hero-overlay"></div>
     <div class="hero-content" id="heroContent">
@@ -468,25 +456,37 @@
       </div>
       <div class="carousel-track-wrap reveal">
         <div class="carousel-track" id="track">
-          <div class="carousel-slide" style="background: linear-gradient(135deg, #b8d8ea, #89c0d8);">
-            <span class="slide-label">PHOTO — LIVING AREA</span>
-            <span class="slide-caption">Living Area</span>
+          <div class="carousel-slide">
+            <img src="images/IMG_7984.jpeg" alt="The Fogcutter exterior">
+            <span class="slide-caption">The Fogcutter</span>
           </div>
-          <div class="carousel-slide" style="background: linear-gradient(135deg, #a8cfe0, #7ab5cc);">
-            <span class="slide-label">PHOTO — KITCHEN</span>
+          <div class="carousel-slide">
+            <img src="images/IMG_7044.jpeg" alt="Living room with coffered ceiling">
+            <span class="slide-caption">Living Room</span>
+          </div>
+          <div class="carousel-slide">
+            <img src="images/IMG_6291.jpeg" alt="Sunroom with rocking chairs">
+            <span class="slide-caption">Sunroom</span>
+          </div>
+          <div class="carousel-slide">
+            <img src="images/IMG_7043.jpeg" alt="Kitchen">
             <span class="slide-caption">Kitchen</span>
           </div>
-          <div class="carousel-slide" style="background: linear-gradient(135deg, #c2dcea, #95c4d8);">
-            <span class="slide-label">PHOTO — BEDROOM</span>
+          <div class="carousel-slide">
+            <img src="images/IMG_7035.jpeg" alt="Master bedroom with skylight">
             <span class="slide-caption">Master Bedroom</span>
           </div>
-          <div class="carousel-slide" style="background: linear-gradient(135deg, #9dc8dc, #6bafc6);">
-            <span class="slide-label">PHOTO — OUTDOOR SHOWER</span>
-            <span class="slide-caption">Outdoor Shower</span>
+          <div class="carousel-slide">
+            <img src="images/IMG_5112.jpeg" alt="Higgins Beach">
+            <span class="slide-caption">Higgins Beach</span>
           </div>
-          <div class="carousel-slide" style="background: linear-gradient(135deg, #b2d4e6, #83bcce);">
-            <span class="slide-label">PHOTO — BACKYARD / DECK</span>
-            <span class="slide-caption">Outdoor Space</span>
+          <div class="carousel-slide">
+            <img src="images/IMG_2809.jpeg" alt="Maine coastline">
+            <span class="slide-caption">Steps Away</span>
+          </div>
+          <div class="carousel-slide">
+            <img src="images/IMG_8562.jpeg" alt="The Fogcutter at night">
+            <span class="slide-caption">Summer Evenings</span>
           </div>
         </div>
         <button class="carousel-btn prev" id="prev" aria-label="Previous photo">
